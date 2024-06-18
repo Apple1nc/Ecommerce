@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-commerce Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 style="margin: 20px 0px;">Product List</h1>
+            <div style="display: flex; align-items: center; justify-content: space-around;">
+                <div style="display: flex;">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter"></select>
+                </div>
+
+                <div style="display: flex;">
+                    <label for="region-filter">Region:</label>
+                    <select id="region-filter"></select>
+                </div>
+
+                <div style="display: flex;">
+                    <label for="price-filter">Price Range:</label>
+                    <input type="number" id="min-price" placeholder="Min Price">
+                    <input type="number" id="max-price" placeholder="Max Price">
+                    <button id="filter-button">Apply Filters</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="product-list"></div>
+        </main>
+        <footer>
+            <h2>Cart</h2>
+            <div id="cart-contents"></div>
+        </footer>
+        
+        <script src="scripts.js"></script>
+    </body>
+</html>
